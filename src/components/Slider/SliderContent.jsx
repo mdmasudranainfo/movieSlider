@@ -4,13 +4,9 @@ const SliderContent = ({ movie }) => {
   return (
     <div>
       <div className="">
-        <h1 className="uppercase md:text-[50px] text-[30px] font-bold">
-          Coming Soon
-        </h1>
-        <h2 className="uppercase md:text-[40px] text-[30px] font-bold py-3">
-          {movie?.name}
-        </h2>
-        <div className="flex justify-between py-5 border-y border-stone-500 text-lg">
+        <h1 className="uppercase  text-[25px]  font-bold">Coming Soon</h1>
+        <h2 className="uppercase  text-[35px] font-bold py-2">{movie?.name}</h2>
+        <div className="flex justify-between py-3 my-3 border-y border-stone-500 text-lg">
           <div className="">
             <p>2019-Movie-2h 10m</p>
           </div>
