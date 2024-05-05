@@ -6,7 +6,7 @@ import { useState } from "react";
 import SliderContent from "./SliderContent";
 
 const BannerSlider = () => {
-  const [active, setActive] = useState(0);
+  const [active, setActive] = useState(demoData[0]);
   const settings = {
     autoplay: true,
     autoplaySpeed: 2000,
@@ -20,9 +20,6 @@ const BannerSlider = () => {
       setActive(data);
     },
   };
-  if (!active) {
-    setActive(demoData[0]);
-  }
 
   return (
     <div className="container mx-auto  flex items-center min-h-screen ">
